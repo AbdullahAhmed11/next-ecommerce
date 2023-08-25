@@ -18,6 +18,8 @@ export {
     RiCustomerServiceFill
 } from 'react-icons/ri';
 export {
-    BsPersonCircle
+    BsPersonCircle,
+    BsGithub
 } from "react-icons/bs"
+export { FcGoogle } from "react-icons/fc"
 export { VscLoading } from 'react-icons/vsc';
