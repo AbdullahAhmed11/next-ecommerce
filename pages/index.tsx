@@ -1,8 +1,8 @@
 import React from 'react'
-import Navbar from '@/components/Navbar/Navbar'
 import Banner from '@/components/Banner/Banner'
-import Footer from '@/components/Footer/Footer'
 import Layout from '@/components/Layout/Layout'
+import HomeSection from '@/components/Home/HomeSection'
+import MaxWidthWrapper from '@/components/MaxWidthWrapper/MaxWidthWrapper'
 
 
 export default function Home() {
@@ -10,6 +10,9 @@ export default function Home() {
     <div>
       <Layout>
         <Banner />
+        <MaxWidthWrapper>
+          <HomeSection />
+        </MaxWidthWrapper>
       </Layout>
     </div>
   )
