@@ -57,7 +57,7 @@ function Navbar() {
             href: "/store"
         },
         {
-            label: "Contact-us",
+            label: "Contact",
             href: "/contact"
         },
     ]
@@ -65,7 +65,7 @@ function Navbar() {
     return (
         <>
             <header className="bg-white dark:bg-black text-white">
-                <nav className="flex items-center justify-between p-6 mx-auto shadow-md ">
+                <nav className="flex items-center justify-between p-6 mx-auto shadow-md border-b">
                     <div className="hidden lg:flex items-center gap-3   ">
                         {
                             NAV_LINKS.map((link) => (
