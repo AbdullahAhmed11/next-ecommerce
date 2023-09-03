@@ -34,7 +34,7 @@ function ContactSection() {
                         <div className="md:flex-row flex flex-col  items-center justify-center gap-2 w-full mt-6 mb-20 ">
                             {
                                 contactsData.map((prop) => (
-                                    <div className="w-2/4 border-2 h-30 flex items-center justify-center flex-col p-3 gap-3 rounded-md text-center">
+                                    <div className="md:w-2/4 w-full border-2 h-30 flex items-center justify-center flex-col p-3 gap-3 rounded-md text-center">
                                         <div className="w-14 h-14 border-2 rounded-full flex items-center justify-center ">
                                             <prop.Icon className="text-2xl" />
                                         </div>
