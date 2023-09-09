@@ -6,6 +6,7 @@ import {
     MdAddShoppingCart,
     MdRemoveShoppingCart
 } from '@/assets/icons';
+import Link from "next/link";
 
 
 
@@ -36,9 +37,12 @@ export function ProductCard({ productData }: ProductDataProps) {
     return (
         <>
             <div className="flex flex-col border w-2/3 md:w-full m-auto">
-                <div className="">
-                    <img src={image} className="w-full h-[230px]" />
-                </div>
+                <Link href={`/product/${id}`}>
+                    <div className="">
+                        <img src={image} className="!p-4 w-full h-[230px]" />
+                    </div>
+                </Link>
+
                 <div className="p-2 border-t mt-2 flex flex-col dark:text-white">
                     <div className="">
                         {/* <h1 className="text-sm">{title}</h1> */}

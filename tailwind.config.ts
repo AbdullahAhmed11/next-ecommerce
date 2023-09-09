@@ -36,7 +36,7 @@ const config: Config = {
         secondary: '#b6bbb6',
         background: '#1a1a1a',
         'main-red': "red['400']",
-        'border-primary': "neutral['700']",
+        borderPrimary: "neutral['700']",
         'border-secondary': "neutral['400']"
       }
     },
