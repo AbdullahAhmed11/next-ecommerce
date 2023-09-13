@@ -4,6 +4,7 @@ import Layout from '@/components/Layout/Layout'
 import HomeSection from '@/components/Home/HomeSection'
 import MaxWidthWrapper from '@/components/MaxWidthWrapper/MaxWidthWrapper'
 import SeoLayout from '@/components/Seo/SeoLayout'
+import Dialog from '@/components/Dialog/Dialog'
 
 export default function Home() {
   return (

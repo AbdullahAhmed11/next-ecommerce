@@ -27,6 +27,7 @@ import Link from "next/link";
 import Searchbar from "./Searchbar";
 import Profile from "./Profile";
 import { useShoppingCart } from "@/lib/context/shoppingCart";
+import Dialogs from "../Dialog/Dialog";
 
 function classNames(...classes: any[]) {
     return classes.filter(Boolean).join(' ')
@@ -38,6 +39,7 @@ function Navbar() {
     const [theme, setTheme] = useState("light")
     const [totalProducts, setTotalProducts] = useState(0)
     const { cartProducts } = useShoppingCart()
+    const [open, setOpen] = useState(true)
 
     useEffect(() => {
         setTotalProducts(cartProducts)
@@ -91,8 +93,9 @@ function Navbar() {
 
                     <div className="flex items-center gap-4 ">
                         <div>
-                            <ShoppingBagIcon className="w-6 h-6 text-black dark:text-white" />
-                            <span className="absolute w-4 h-4 rounded-full bg-black dark:bg-white dark:text-black flex items-center justify-center text-white top-6 right-29">{totalProducts}</span>
+                            {/* <ShoppingBagIcon className="w-6 h-6 text-black dark:text-white" />
+                            <span className="absolute w-4 h-4 rounded-full bg-black dark:bg-white dark:text-black flex items-center justify-center text-white top-6 right-29">{totalProducts}</span> */}
+                            <Dialogs />
                         </div>
                         <div>
                             <Profile />
